@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_Button" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="gAt-oW-g1E">
+                                <rect key="frame" x="0.0" y="79" width="393" height="739"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cge-yB-RdN">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="95"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Unlock" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ui1-vp-wBU">
+                                                <rect key="frame" x="145.33333333333334" y="37" width="102.66666666666666" height="41"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="ui1-vp-wBU" firstAttribute="centerX" secondItem="Cge-yB-RdN" secondAttribute="centerX" id="SYQ-ap-agr"/>
+                                            <constraint firstItem="ui1-vp-wBU" firstAttribute="centerY" secondItem="Cge-yB-RdN" secondAttribute="centerY" id="jHJ-Wi-mAM"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qex-LW-bnA">
+                                        <rect key="frame" x="0.0" y="144" width="393" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Unlock Front Door"/>
+                                        <connections>
+                                            <action selector="doButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aHG-Z2-FGb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PO8-XW-pdz">
+                                        <rect key="frame" x="0.0" y="227.33333333333331" width="393" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Unlock Office Door"/>
+                                        <connections>
+                                            <action selector="doButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3zz-qT-KdQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBA-Su-l6t">
+                                        <rect key="frame" x="0.0" y="310.66666666666669" width="393" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Unlock North Playground"/>
+                                        <connections>
+                                            <action selector="doButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E8m-A5-62y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeN-qq-k1R">
+                                        <rect key="frame" x="0.0" y="394" width="393" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Unlock North CAPS Door"/>
+                                        <connections>
+                                            <action selector="doButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LEV-Wo-oxV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ZB-5F-on2">
+                                        <rect key="frame" x="0.0" y="477.33333333333337" width="393" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Unlock Northeast Door"/>
+                                        <connections>
+                                            <action selector="doButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ks0-T5-5kK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xw9-fk-RCA">
+                                        <rect key="frame" x="0.0" y="560.66666666666663" width="393" height="34.333333333333371"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Unlock South Playground Door"/>
+                                        <connections>
+                                            <action selector="doButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7fK-N1-Wr0"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bC9-QS-aYe">
+                                        <rect key="frame" x="0.0" y="644" width="393" height="95"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gAt-oW-g1E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="DzT-CE-Ff7"/>
+                            <constraint firstItem="gAt-oW-g1E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hys-Mn-14h"/>
+                            <constraint firstItem="gAt-oW-g1E" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pcT-tF-J9a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gAt-oW-g1E" secondAttribute="trailing" id="r6i-j8-mue"/>
+                            <constraint firstItem="gAt-oW-g1E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vOD-qV-ZXy"/>
+                            <constraint firstItem="gAt-oW-g1E" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="y0v-rt-JID"/>
+                            <constraint firstItem="gAt-oW-g1E" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="yF5-ha-m4W"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="-6.3380281690140849"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
